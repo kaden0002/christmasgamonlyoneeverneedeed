@@ -230,7 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     playDialogue(preGameDialogue, () => {
         // Start the game AFTER dialogue finishes
-        round = 20;
         startRound();
     });
 
