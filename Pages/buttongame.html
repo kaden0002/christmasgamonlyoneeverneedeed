@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS\buttongame.css">
+</head>
+
+<body>
+    <div id="gameContainer">
+        <h2 id="roundInfo">Round 1</h2>
+        <p id="instructions">Press the button 1 time</p>
+        <p id="timer">Time: 10</p>
+        <p id="clickCount">Clicks</p>
+        <p id="holdDisplay">Hold: 0s</p>
+        <div class="buttonContainer">
+            <button id="redButton">PRESS ME PLEASE</button>
+        </div>
+
+        <p id="gameMessage"></p>
+
+    </div>
+    <div id="dialogueOverlay"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black; color:white; align-items:center; justify-content:center; z-index:1000;">
+        <div id="dialogueBox"
+            style="background: rgba(0,0,0,0.8); padding: 20px; border-radius:10px; max-width:600px; text-align:center;">
+            <p id="dialogueText"></p>
+        </div>
+    </div>
+    <video id="myVideo" width="640" style="display: none;" >
+        <source src="../Videos/ButtonGmaeCutrscene.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button id="nextButton" style="display:none;" onclick="window.location.href='../Pages/ChristmasTreePage.html'">Continue</button>
+
+
+
+    <script src="../javaScript/buttongame.js"></script>
+</body>
+
+</html>

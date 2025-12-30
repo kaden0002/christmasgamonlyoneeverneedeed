@@ -1,0 +1,161 @@
+/* body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#dialogueBox {
+    display: none;
+    margin: 20px auto;
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+}
+
+#continueBtn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000;
+}
+
+#casinoImage {
+    display: none;
+    max-width: 80%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+#cardGrid {
+    display: none;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    /* base color for all cards */
+/* color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ffd633;
+}
+
+#scoreDisplay {
+    margin-top: 20px;
+    font-size: 20px;
+} */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+}
+
+#cardGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    /* set fixed row height */
+    gap: 10px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    /* account for padding */
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+    grid-auto-rows: auto;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    object-fit: contain;
+    /* ensures the image fills the card area */
+    transition: transform 0.2s;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+}
+
+.card-wrapper {
+    width: 100%;
+    aspect-ratio: 1/2;
+    /* width:height ratio to match your card image */
+}
+
+
+#startTextContent {
+    font-size: 24px;
+    padding: 20px;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

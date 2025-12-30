@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Casino Game</title>
+    <link rel="stylesheet" href="casino.css">
+</head>
+
+<body>
+
+    <div id="gameContainer">
+        <!-- Start text overlay -->
+        <div id="startText" class="overlay">
+            <p id="startTextContent"></p>
+            <button id="continueBtn" style="display:none;">Continue</button>
+        </div>
+
+        <!-- Fullscreen images -->
+
+        <img id="fullImage1" src="../Images/casinoGame/casinoCCP.png" alt="Casino Image" class="fullscreen"
+            style="display: none;">
+        <img id="fullImage2" src="../Images/casinoGame/CCP.png" alt="Casino Image Shoten" class="fullscreen"
+            style="display: none;">
+
+        <!-- Card grid -->
+        <div id="cardGrid" class="card-grid"></div>
+
+        <div class="card-wrapper">
+            <img src="../Images/casinoGame/card.png" class="card-img" style="display: none;">
+        </div>
+
+        <!-- Score display -->
+        <div id="scoreDisplay">Score: 0</div>
+    </div>
+
+    <script src="../javaScript/casino.js"></script>
+</body>
+
+</html>

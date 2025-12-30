@@ -1,0 +1,133 @@
+#treeImg {
+    width: 80vw;
+    max-width: 2000px;
+    height: auto;
+    z-index: 1;
+}
+
+.button {
+    /*Font size + Padding*/
+    padding: 10px 30px;
+    font-size: 40px;
+    cursor: pointer;
+
+    /*Postion*/
+    margin: 10px 0;
+
+    /*Looks*/
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 25px;
+
+    z-index: 1;
+}
+
+.home {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: lightslategray;  */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* center container horizontally */
+    align-items: center;
+    /* center container vertically */
+    background-image: url("../Images/christmasTree/foresetsnow.png");
+    background-size: auto;
+    /* scales to fill screen */
+    background-position: center top;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+
+
+.tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10vh;
+}
+
+#dialogueBox {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: auto;
+    min-height: 160px;
+
+    padding: 30px 35px;
+
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    line-height: 1.6;
+
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+
+    display: none;
+    z-index: 9999;
+    /* position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    display: none;
+
+    z-index: 1000; */
+}
+
+#dialogueText {
+    margin: 0;
+    text-align: center;
+    font-size: 10rem;
+    font-family: monospace;
+    white-space: normal;
+    word-wrap: break-word;
+}
+#secretButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    z-index: 9999; /* ensure it's on top */
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#secretButton2 {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    z-index: 9999; /* ensure it's on top */
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+body.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: bisque;
+    
+}
+
+body.home h1.title {
+    text-align: center;
+    font-size: 60px;
+    color: #333;
+}
+
+body.home p.intro {
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+}
+
+.start-button-home {
+    /*Font size + Padding*/
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+    /*Postion*/
+    margin: 10px 0;
+
+    /*Looks*/
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 25px;
+    }

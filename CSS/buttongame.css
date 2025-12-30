@@ -1,0 +1,118 @@
+#redButton {
+    width: 100px;
+    /* size of the button */
+    height: 100px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    /* makes it circular */
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+    /* smooth visual change */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* subtle shadow */
+}
+
+#redButton:active {
+    transform: scale(0.9);
+    /* button looks pressed */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* smaller shadow */
+    background-color: darkred;
+    /* optional color change */
+}
+
+#redButton:hover {
+    background-color: darkred;
+}
+
+/* 
+#gameContainer {
+
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2 ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+} */
+
+#gameContainer {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full width of browser */
+    height: 100vh;
+    /* Full height of browser */
+    object-fit: cover;
+    /* Crops video nicely instead of stretching */
+    z-index: 9999;
+    /* On top of everything */
+    display: none;
+}
+
+#instructions {
+    white-space: pre-line;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:white;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#roundInfo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#instructions {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    background: orange;
+}
+
+/* Stats row layout */
+#timer,
+#clickCount,
+#holdDisplay {
+    font-size: 18px;
+    margin: 5px 0;
+    background: lightblue;
+    padding: 8px;
+    border-radius: 6px;
+}
